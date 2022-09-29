@@ -1,11 +1,11 @@
 let questions = [
   {
-    question: 'Em qual elemento HTML é linkado o javascript?',
+    question: 'Em qual elemento HTML é linkado o JavaScript?',
     options: ['tag js', 'tag script', 'tag scripting', 'tag javascript'],
     answer: 'B',
   },
   {
-    question: 'Onde é o local correto a se colocar o javascript?',
+    question: 'Onde é o local correto a se colocar o JavaScript?',
     options: [
       'Na tag body',
       'Na tag head',
@@ -15,7 +15,7 @@ let questions = [
   },
   {
     question:
-      'Qual a sintaxe correta para adicionar um arquivo javascript externo na tag script?',
+      'Qual a sintaxe correta para adicionar um arquivo JavaScript externo na tag script?',
     options: ['name="xxx.js"', 'src="xxx.js"', 'href="xxx.js"'],
     answer: 'B',
   },
@@ -35,7 +35,7 @@ let questions = [
     answer: 'D',
   },
   {
-    question: 'Como é criada uma função no Javascript?',
+    question: 'Como é criada uma função no JavaScript?',
     options: [
       'function:minhaFuncao()',
       'function = minhaFuncao()',
@@ -49,7 +49,7 @@ let questions = [
     answer: 'C',
   },
   {
-    question: 'Como escrever uma condicional IF no Javascript?',
+    question: 'Como escrever uma condicional IF no JavaScript?',
     options: ['if i = 5', 'if i == 5 then', 'if (i == 5)', 'if i = 5 then'],
     answer: 'C',
   },
