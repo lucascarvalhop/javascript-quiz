@@ -2,6 +2,8 @@
 
 # Sobre o projeto
 
+https://lucascarvalhop.github.io/javascript-quiz/
+
 "JavaScript Quiz" é um projeto onde são feitas 10 perguntas simples sobre a linguagem de progamação JavaScript, cada pergunta tem entre uma a quatro alternativas
 de resposta e somente uma está correta. Ao final do quiz é mostrado ao jogador quantas perguntas ele acertou, a porcentagem de acertos e também um breve
 comentário sobre seu desempenho.
