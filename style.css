@@ -111,6 +111,7 @@ body {
   color: white;
   font-weight: bold;
   border-radius: 5px;
+  outline: none;
 }
 
 .modal-loading {
