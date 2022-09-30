@@ -38,35 +38,19 @@ function renderQuestions(currentQuestion) {
     optionsContainer.innerHTML =
       optionsContainer.innerHTML +
       `
-    <div class="option-container">
+    <div class="option-container" data-letter="${letter}">
     <div class="tag">${letter}</div>
-    <span class="option" data-letter="${letter}">${option}</span>
+    <span class="option">${option}</span>
     </div>`;
   });
 
   /* O trecho de código abaixo é responsável por identificar qual alternativa o usuário marcou
-  e preencher em um array (answers) cada resposta. Os três IFS estão presentes porque o usuário
-  pode clicar tanto na letra que representa a alternativa, tanto como no box da alternativa
-  tanto como no texto da alternativa, em cada caso é usado um método pra saber qual é a resposta em sí */
-
+  e preencher em um array (answers) cada resposta. */
   const options = document.querySelectorAll('.option-container');
-  options.forEach((option, index) => {
+  options.forEach((option) => {
     option.addEventListener('click', (event) => {
-      let tag;
-      // Caso o click seja no box da alternativa
-      if (event.target.querySelector('.tag')) {
-        tag = event.target.querySelector('.tag').innerHTML;
-        // Caso o click seja direto na letra que representa a alternativa
-      } else if (event.target.classList[0] == 'tag') {
-        tag = event.target.innerHTML;
-        /* Caso o click seja no texto da alternativa, que é um span que possui um
-      data attribute de acordo com a letra que representa a alternativa */
-      } else {
-        tag = event.target.getAttribute('data-letter');
-      }
-      /* Após saber qual foi a resposta a resposta é adicionada a array de respostas, o procedimento acima
-      é feito com cada pergunta do quiz */
-      answers.push(tag);
+      let answer = event.currentTarget.getAttribute('data-letter');
+      answers.push(answer);
       /* Após a array de respostas estar preenchida com as respostas de todas as perguntas, o código abaixo
       compara o valor da resposta do usuário com o valor da resposta correta, presente na array de questões
       se a resposta estiver certa ele soma +1 na variavel acertos */
